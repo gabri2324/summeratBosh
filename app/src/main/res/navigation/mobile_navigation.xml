@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/loginFragment">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.summerbosch2023basesummerproject.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_mathFragment"
+            app:destination="@id/mathFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_testFragment"
+            app:destination="@id/testFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_galleryFragment"
+            app:destination="@id/galleryFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_mathFragment2"
+            app:destination="@id/mathFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_temperatureConvertFragment"
+            app:destination="@id/temperatureConvertFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_presenceFragment"
+            app:destination="@id/presenceFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_qrCodeFragment"
+            app:destination="@id/qrCodeFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_pokemonColectionFragment"
+            app:destination="@id/pokemonColectionFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mathFragment"
+        android:name="com.example.summerbosch2023basesummerproject.ui.math.MathFragment"
+        android:label="fragment_math"
+        tools:layout="@layout/fragment_math" >
+        <action
+            android:id="@+id/action_mathFragment_to_temperatureConvertFragment"
+            app:destination="@id/temperatureConvertFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/testFragment"
+        android:name="com.example.summerbosch2023basesummerproject.TestFragment"
+        android:label="fragment_test"
+        tools:layout="@layout/fragment_test" />
+    <fragment
+        android:id="@+id/galleryFragment"
+        android:name="com.example.summerbosch2023basesummerproject.GalleryFragment"
+        android:label="fragment_gallery"
+        tools:layout="@layout/fragment_gallery" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.summerbosch2023basesummerproject.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_loginFragment_to_navigation_home2"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_loginFragment_to_navigation_home3"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_loginFragment_to_registoFragment"
+            app:destination="@id/registoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/temperatureConvertFragment"
+        android:name="com.example.summerbosch2023basesummerproject.TemperatureConvertFragment"
+        android:label="fragment_temperature_convert"
+        tools:layout="@layout/fragment_temperature_convert" />
+    <fragment
+        android:id="@+id/presenceFragment"
+        android:name="com.example.summerbosch2023basesummerproject.PresenceFragment"
+        android:label="fragment_presence"
+        tools:layout="@layout/fragment_presence" />
+    <fragment
+        android:id="@+id/registoFragment"
+        android:name="com.example.summerbosch2023basesummerproject.RegistoFragment"
+        android:label="fragment_registo"
+        tools:layout="@layout/fragment_registo" >
+        <action
+            android:id="@+id/action_registoFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.summerbosch2023basesummerproject.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/qrCodeFragment"
+        android:name="com.example.summerbosch2023basesummerproject.QrCodeFragment"
+        android:label="fragment_qr_code"
+        tools:layout="@layout/fragment_qr_code" >
+        <action
+            android:id="@+id/action_qrCodeFragment_to_pokemonFragment"
+            app:destination="@id/pokemonFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pokemonFragment"
+        android:name="com.example.summerbosch2023basesummerproject.PokemonFragment"
+        android:label="fragment_pokemon"
+        tools:layout="@layout/fragment_pokemon" >
+        <action
+            android:id="@+id/action_pokemonFragment_to_pokemonColectionFragment"
+            app:destination="@id/pokemonColectionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pokemonColectionFragment"
+        android:name="com.example.summerbosch2023basesummerproject.PokemonColectionFragment"
+        android:label="fragment_pokemon_colection"
+        tools:layout="@layout/fragment_pokemon_colection" />
+
+</navigation>

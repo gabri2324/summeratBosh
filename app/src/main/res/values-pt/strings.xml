@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Summer@Bosch2023 Base Summer Project</string>
+    <string name="calculate">Multiplicar</string>
+    <string name="result">Resultado</string>
+    <string name="profile">Perfil</string>
+    <string name="call">Chamada</string>
+    <string name="temperature">Temperatura</string>
+    <string name="math">Matemática</string>
+    <string name="gallery">Galeria</string>
+    <string name="test">Teste</string>
+    <string name="makecall">Fazer Chamada</string>
+    <string name="edit">Editar</string>
+    <string name="testing">Testando</string>
+    <string name="divide">Dividir</string>
+    <string name="plus">Somar</string>
+    <string name="createnewrecord">Criar novo registo</string>
+    <string name="register">Registar</string>
+    <string name="subtract">Subtrair</string>
+    <string name="nav_open">Abrir</string>
+    <string name="nav_close">Fechar</string>
+    <string name="button">Botão</string>
+    <string name="add_pokemon">Adicionar Pokemon</string>
+    <string name="add">Adicionar</string>
+</resources>
